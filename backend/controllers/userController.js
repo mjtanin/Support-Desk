@@ -9,6 +9,7 @@ const User = require('../models/userModel')
 // @access  Public
 const registerUser = asyncHandler(async (req, res) => {
   const { name, email, password} = req.body
+  console.log(req.body);
 
   // Validation 
   if(!name || !email || !password){
